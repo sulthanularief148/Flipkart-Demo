@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart demo</title>
+
+    <!--Bootstrap 5 CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <!-- <link href="/assets/css/bootstrap.min.css"/>
+    <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+<body>
+
+    <header class="header-section">
+        <nav>
+            <div class="logo">Your Logo</div>
+            <div class="menu-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="close"><i class="fa fa-times" aria-hidden="true"></i></li>
+            </ul>
+        </nav>
+        
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" aria-current="true"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets\images\download.jpg" class="d-block w-100 img-fluid" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>First slide label</h5>
+                                  <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets\images\bigDeal.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Second slide label</h5>
+                                  <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets\images\biggestSale.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                  <h5>Third slide label</h5>
+                                  <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                 
+                    </div>
+
+                    <div class="col-4 header-second" >
+                        <div class="row head-right mob">
+                           
+                               <img class="img-fluid img" src="assets\images\offer.jpg">
+                           
+                           
+                            
+                        </div>
+                        <div class="row head-right mob">
+                           
+                                <img class="img-fluid img" src="assets\images\dora.jpg">
+                            
+
+                        </div>
+                        <!-- <div class="row head-right">
+                         
+                                <img class="img-fluid img" src="assets\images\teddy.jpg">
+                            
+
+                        </div> -->
+
+                    </div>
+                       </div>
+                
+            </div>
+        
+    </header>
+
+    <!-- Second section -->
+    <div class="container overview">
+        <div class="row">
+            <div class="col-sm">
+   <p>Flipkart is one of the largest e-commerce companies in India, founded in 2007 by Sachin Bansal and Binny Bansal, who are not related. The company's headquarters are in Bangalore, India, and it is now majority-owned by Walmart. Flipkart started as an online bookstore and has since expanded into a wide range of product categories, including electronics, fashion, home goods, and groceries.</p>
+   <p>Flipkart has played a significant role in shaping the e-commerce landscape in India, particularly with its focus on providing a wide selection of products at competitive prices. The company has invested heavily in technology and logistics infrastructure to ensure that customers receive their orders quickly and efficiently.</p>
+   <p>One of the key factors in Flipkart's success has been its ability to innovate and adapt to changing market conditions. For example, the company was one of the first e-commerce companies in India to offer cash on delivery as a payment option, which has been particularly popular in a country where many people do not have credit or debit cards.</p>
+            </div>
+            <div class="col-sm">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gs9UTVjeINE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- Product section -->
+    
+
+    <section class="product-section overview">
+        <h2>Featured Products</h2>
+        <div class="product-row">
+          <div class="product card">
+            <img src="assets\images\products\airbuds.jpg" alt="Product 1">
+            <div class="card-body">
+                <h3 class="card-title">Airbuds</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+            
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\airpods.jpg" alt="Product 2">
+            <div class="card-body">
+                <h3 class="card-title">Apple airpod</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\digital.jpg" alt="Product 3">
+            <div class="card-body">
+                <h3 class="card-title">Digital clock</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\headset.jpg" alt="Product 4">
+            <div class="card-body">
+                <h3 class="card-title">Earphone</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-row">
+          <div class="product card">
+            <img src="assets\images\products\watch.jpg" alt="Product 5">
+            <div class="card-body">
+                <h3 class="card-title">Watch</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\perfume.jpg" alt="Product 6">
+            <div class="card-body">
+                <h3 class="card-title">Perfume</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\perfume1.jpg" alt="Product 7">
+            <div class="card-body">
+                <h3 class="card-title">Perfume</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\shoe.jpg" alt="Product 8">
+            <div class="card-body">
+                <h3 class="card-title">Shoe</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+        </div>
+        <div class="product-row">
+          <div class="product card">
+            <img src="assets\images\products\Sport shoe" alt="Product 9">
+            <div class="card-body">
+                <h3 class="card-title">Airbuds</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\clock.jpg" alt="Product 10">
+            <div class="card-body">
+                <h3 class="card-title">Airbuds</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\holder.jpg" alt="Product 11">
+            <div class="card-body">
+                <h3 class="card-title">Mobile holder</h3>
+                <p class="card-text">Description of Product 1</p>
+            </div>
+          </div>
+          <div class="product card">
+            <img src="assets\images\products\usb.jpg" alt="Product 12">
+            <div class="card-body">
+                <h3 class="card-title">USB Hubon of Product 1</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review section  -->
+      <div class="customer-review-section">
+        <h2>Customer Reviews</h2>
+        <div class="customer-review-form">
+        
+          <form id="review-form">
+            <div class="form-group">
+              <label for="product-name">Product Name</label>
+              <input type="text" class="form-control" id="product-name" placeholder="Enter product name">
+            </div>
+            <div class="form-group">
+              <label for="review-description">Review Description</label>
+              <textarea class="form-control" id="review-description" rows="3" placeholder="Enter review description"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="review-rating">Rating (out of 5)</label>
+              <input type="number" class="form-control" id="review-rating" placeholder="Enter rating (1-5)">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="customer-reviews">
+          <!-- Reviews will be appended here -->
+        </div>
+      </div>
+      
+      <div class="review-section">
+        <!-- existing reviews go here -->
+      </div>
+      
+      <div class="review-section">
+          
+          <div class="review-section">
+            <!-- existing reviews go here -->
+          </div>
+          
+        <!-- review one -->
+        <div class="review">
+          <div class="customer-info">
+            <h4 class="customer-name">John Doe</h4>
+            <span class="product-name">Product Name</span>
+          </div>
+          <div class="review-rating">
+            <span class="rating">4.5</span> / 5 stars
+          </div>
+          <p class="review-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac convallis nulla. Nam rhoncus libero vel diam venenatis, non gravida nunc feugiat.</p>
+        </div>
+        <!-- Review two -->
+        <div class="review">
+          <div class="customer-info">
+            <h4 class="customer-name">Jane Doe</h4>
+            <span class="product-name">Product Name</span>
+          </div>
+          <div class="review-rating">
+            <span class="rating">5</span> / 5 stars
+          </div>
+          <p class="review-description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin dictum dolor vel mi vehicula, sit amet congue urna luctus.</p>
+        </div>
+      </div>\
+
+      <!-- Footer section  -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About Us</h3>
+              <p>I'm a web developer and I love creating beautiful and functional websites. This is my portfolio website, where you can see some of my latest projects and learn more about my skills and experience.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Contact Us</h3>
+              <ul class="list-unstyled">
+                <li><i class="fa fa-phone"></i> 9659051798</li>
+                <li><i class="fa fa-envelope"></i>sulthanularief148@gmail.com</li>
+                <li><i class="fa fa-map-marker"></i>18/A, hakka sahib street-Parangipettai</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Follow Us</h3>
+              <ul class="list-unstyled social-icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+              <p class="text-center">&copy; 2023 Designed by Sulthanul Arief. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+      
+      
+    
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
