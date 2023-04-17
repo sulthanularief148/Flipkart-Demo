@@ -46,3 +46,19 @@ reviewForm.addEventListener('submit', (event) => {
 reviewForm.reset();
 }
 });
+
+
+
+// Dark/Light mode button
+var theme = document.getElementById("btnSwitch");
+document.getElementById('btnSwitch').addEventListener('click',()=>{
+  if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+    theme.innerHTML = "Dark"
+      document.documentElement.setAttribute('data-bs-theme','light')
+  }
+  else {
+      document.documentElement.setAttribute('data-bs-theme','dark')
+      theme.innerHTML = "Light"
+  }
+})
+

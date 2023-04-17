@@ -109,10 +109,15 @@ width: 15%;
     margin: 5px;
 }
 @media screen and (max-device-width: 640px) and (min-device-width: 360px) and (orientation: portrait) {
-    .mob {
-        display: none;
+    .mob, .mobFrame {
+        display: none !important;
+    }
+    nav {
+      position: absolute;
+      bottom: 80px;
     }
 }
+
 
 /* Product section */
 
@@ -338,15 +343,23 @@ width: 50%;
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    background-color: #555;
+    
     line-height: 30px;
     transition: background-color 0.2s ease;
   }
   
-  .social-icons a:hover {
+  /* .social-icons a:hover {
     background-color: #333;
-  }
+  } */
   
+
+  @import "functions";
+@import "variables";
+@import "variables-dark";
+
+/* customize primary dark */
+
+
   
 
  
