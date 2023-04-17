@@ -9,6 +9,9 @@ header {
 .overview {
     margin-bottom: 8%;
 }
+.header-second .img-fluid{
+ height: 240px;  
+}
 
 nav {
 	display: flex;
@@ -17,10 +20,11 @@ nav {
 	height: 100%;
 }
 
-.logo {
-	color: #fff;
-	font-size: 1.5rem;
-	padding: 0 20px;
+.logo img {
+position: relative;
+top: 0;
+left: 5%;
+width: 15%;
 }
 
 .menu-toggle {
@@ -109,6 +113,8 @@ nav {
         display: none;
     }
 }
+
+/* Product section */
 
 .product-section {
     max-width: 1200px;
