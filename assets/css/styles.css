@@ -113,9 +113,17 @@ width: 15%;
         display: none !important;
     }
     nav {
-      position: absolute;
-      bottom: 80px;
+      position: relative;
+      top: -22px;
     }
+    .mob-header {
+      display: none;
+    }
+}
+@media only screen and (min-device-width: 1400px){
+  .mobile-view {
+    display: none;
+  }
 }
 
 
